@@ -14,6 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
       activitiesList.innerHTML = "";
 
       // Populate activities list
+
+// Function to unregister a participant
+function unregisterParticipant(participantId) {
+  // Logic to unregister the participant
+  console.log(`Unregistering participant with ID: ${participantId}`);
+  // You can add an API call here to remove the participant from the server
+}
       Object.entries(activities).forEach(([name, details]) => {
         const activityCard = document.createElement("div");
         activityCard.className = "activity-card";
